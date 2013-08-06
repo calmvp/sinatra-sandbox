@@ -25,10 +25,36 @@
  <div class="container">
   <h1>Sinatra Sandbox</h1>
 
+  <form action="/cool_url" method="get">
+    Get a cool url:
+    <br>
+    <!-- <input type="text" name="user_input"> -->
+    <input type="submit" value="Get it!">
+  </form>
+
   <form action="/cool_url" method="post">
     Post a cool url:
     <br>
-    <input type="text" name="user_input">
+    <h3>Text Box</h3>    
+    <input type="text" name="text_input">
     <input type="submit" value="Post it!">
+    <h4>Text Area</h4>
+    <textarea cols="40" rows="5" name="myname">
+    Now we are inside the area - which is nice.
+    </textarea>
+    <input type="submit" value="Post it!">
+    <br>
+    <h4>Radio buttons</h4>
+    <input type="radio" name="group1" value="Milk"> Milk<br>
+    <input type="radio" name="group1" value="Butter" checked> Butter<br>
+    <input type="radio" name="group1" value="Cheese"> Cheese
+    <hr>
+    <input type="radio" name="group2" value="Water"> Water<br>
+    <input type="radio" name="group2" value="Bees"> Bees<br>
+    <input type="radio" name="group2" value="Wine" checked> 
+    Wine
+    <br>
+    <input type="submit" value="Post it!">
+    <br>
   </form>
 </div>
